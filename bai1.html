@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button"onclick="inPut()"value="ClickMe!">
+<script>
+    function inPut() {
+        let a=[];
+        for(let i=0;i<2;i++){
+            a[i]=new Array(3);
+            for(let j=0;j<2;j++){
+                a[i][j]=parseInt(prompt("nhap phan tu thu"+"["+i+"]"+"["+j+"]"));
+            }
+        }
+        for(let i=0;i<2;i++) {
+            for (let j = 0; j < 2; j++) {
+                document.write("'"+a[i][j]+"'");
+            }
+            document.write("<br/>");
+        }
+    }
+</script>
+
+</body>
+</html>

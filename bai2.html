@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>daonguoc</title>
+</head>
+<body>
+<button type="button" onclick="dow()">Click Me!</button>
+<script>
+    function dow() {
+        let a = ['a', 'v', 'ad', 'csacac', 'csaca'];
+        let tg;
+        for (let i = 0, j = a.length - 1; i < j, j > i; i++, j--) {
+            tg = a[i];
+            a[i]=a[j];
+            a[j]=tg;
+        }
+        alert(a);
+    }
+
+</script>
+</body>
+</html>
